@@ -31,4 +31,3 @@ jobs:
           name: avron-magician-windows
           path: |
             src-tauri/target/release/bundle/nsis/*.exe
-            src-tauri/target/release/bundle/msi/*.msi
