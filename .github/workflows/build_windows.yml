@@ -1,4 +1,4 @@
-name: Build Avron: Magician for Windows
+name: "Build Avron: Magician for Windows"
 
 on:
   workflow_dispatch:
