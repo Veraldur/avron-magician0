@@ -4,10 +4,10 @@ export default class MainMenuScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('menu_bg', '../assets/menu/menu_bg.png');
+        this.load.image('menu_bg', 'assets/menu/menu_bg.png');
 
-        this.load.audio('avron_test', '../assets/audio/music/avron_test.mp3');
-        this.load.audio('avron_test2', '../assets/audio/music/avron_test2.mp3');
+        this.load.audio('avron_test', 'assets/audio/music/avron_test.mp3');
+        this.load.audio('avron_test2', 'assets/audio/music/avron_test2.mp3');
     }
 
     create() {
