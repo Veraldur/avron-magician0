@@ -23,8 +23,8 @@
     "security": { "csp": null }
   },
   "bundle": {
-    "active": true,
-    "targets": ["nsis", "msi"],
+  "active": true,
+  "targets": ["nsis"],
     "windows": {
       "nsis": { "installMode": "currentUser" }
     }
