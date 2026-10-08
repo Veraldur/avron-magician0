@@ -1,9 +1,23 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'node:path';
+import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
   base: './',
-  server: { port: 5173, strictPort: true },
-  build: { target: 'es2020', outDir: 'dist', emptyOutDir: true },
-  resolve: { alias: { '@': resolve(__dirname, 'src') } }
+
+  server: {
+    port: 5173,
+    strictPort: true
+  },
+
+  build: {
+    target: 'es2020',
+    outDir: 'dist',
+    emptyOutDir: true
+  },
+
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
 });
